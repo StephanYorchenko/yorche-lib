@@ -44,7 +44,7 @@ export const crossWrapper = css`
   height: 15px;
   display: inline-flex;
   align-items: center;
-  margin-left: 13px;
+  margin-left: 14px;
   &:hover{
     cursor: pointer;
   }
@@ -54,6 +54,7 @@ export const accessoryRightWrapper = css`
   height: 15px;
   display: inline-flex;
   align-items: center;
+  margin-left: 14px;
 `;
 
 
