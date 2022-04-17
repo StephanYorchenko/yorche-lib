@@ -1,6 +1,9 @@
 import {css} from 'emotion'
+import {ColorsEnum} from "../colors";
 
 export const button = css`
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 14px;
   display: inline-flex;
   margin: 0;
   align-items: center;
@@ -16,7 +19,6 @@ export const button = css`
     transition: background-color .12s ease, box-shadow .12s ease;
   }
   &:hover{
-    cursor: pointer;
     box-shadow: 2px 2px 2px #828282;
     transition: background-color .12s ease,
       box-shadow .12s ease;
@@ -24,8 +26,34 @@ export const button = css`
 `;
 
 export const acceptVariant = css`
-  background-color: #27AE60;
+  background-color: ${ColorsEnum.Accept};
   color: #fff;
+`;
+
+export const rejectVariant = css`
+  background-color: ${ColorsEnum.Reject};
+  color: #fff;
+`;
+
+export const defaultVariant = css`
+  background-color: ${ColorsEnum.GrayDark};
+  color: #fff;
+`;
+
+export const crossWrapper = css`
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 13px;
+  &:hover{
+    cursor: pointer;
+  }
+`;
+
+export const accessoryRightWrapper = css`
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
 `;
 
 
