@@ -30,7 +30,10 @@ function App() {
       <dd>
         <div>
           <Chip text="Екатеринбург Малышева 64" accessoryRight={
-            <><Cross/><Cross/></>
+            <>
+                <Cross/>
+                <Cross/>
+            </>
           }/>
         </div>
       </dd>
