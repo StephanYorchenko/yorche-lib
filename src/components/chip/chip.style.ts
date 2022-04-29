@@ -3,7 +3,7 @@ import {ColorsEnum} from "../colors";
 
 export const button = css`
   font-family: 'Anonymous Pro', monospace;
-  font-size: 14px;
+  font-size: 17px;
   display: inline-flex;
   margin: 0;
   align-items: center;

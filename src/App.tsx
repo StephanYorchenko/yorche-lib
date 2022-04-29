@@ -1,6 +1,7 @@
 import React from 'react';
 import {Chip} from "./components/chip";
 import {Helmet} from "react-helmet";
+import {Card} from "./components/card"
 import {Cross} from "./components/icon/cross";
 
 function App() {
@@ -33,6 +34,16 @@ function App() {
           }/>
         </div>
       </dd>
+        <dt>Карточка</dt>
+        <dd>
+            <div>
+                <Card
+                    title="Aboba"
+                    description="День рождения нашего дорогого друга Хмитрия Длопина!"
+                    backgroundImageUrl={"https://picsum.photos/id/1069/400/200"}
+                />
+            </div>
+        </dd>
     </div>
   );
 }
