@@ -1,5 +1,4 @@
 export interface ICarouselProps {
-    arrowRight?: JSX.Element;
-    arrowLeft?: JSX.Element;
+    scrollStep?: number;
     carouselElements?: JSX.Element[];
 }

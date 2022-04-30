@@ -3,7 +3,6 @@ import {Chip} from "./components/chip";
 import {Helmet} from "react-helmet";
 import {Card} from "./components/card"
 import {Cross} from "./components/icon/cross";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "./components/carousel";
 
 
