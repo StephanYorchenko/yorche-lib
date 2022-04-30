@@ -1,5 +1,5 @@
 import {ICardProps} from "./interface";
-import {StyledCard, StyledDescription, StyledPic, CardTitle, TitleStyle, StyledButton, StyledArrow} from "./card.style";
+import {StyledCard, StyledDescription, StyledPic, CardTitle, StyledButton, StyledArrow, TitleContainer} from "./card.style";
 
 export const Card = ({
      title,
@@ -8,9 +8,9 @@ export const Card = ({
  }: ICardProps) => {
     return (
         <StyledCard>
-            <TitleStyle>
+            <TitleContainer>
                 <CardTitle>{title}</CardTitle>
-            </TitleStyle>
+            </TitleContainer>
             <StyledPic backgroundUrl={backgroundImageUrl}/>
             <StyledDescription>
                 {description}

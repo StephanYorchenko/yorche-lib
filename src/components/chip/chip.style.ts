@@ -2,7 +2,8 @@ import {css} from 'emotion'
 import {ColorsEnum} from "../colors";
 
 export const button = css`
-  font-family: 'Anonymous Pro', monospace;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
   font-size: 17px;
   display: inline-flex;
   margin: 0;
