@@ -1,25 +1,43 @@
 import styled from "@emotion/styled/macro";
 
-export const CardTitle = styled.h2`
-      z-index: 99;
-      font-family: anonymous-pro,monospace;
-      position: absolute;
-      bottom: 0;
-      font-size: 30px;
-      font-weight: 700;
-      color: #fff;
-      pointer-events:none;
-      text-align: left;
-      text-shadow: -1px 0 black;
+
+export const StyledCard = styled.div`
+    height: 200px !important;
+    width: 400px !important;
+    min-width: 400px !important;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
 `;
 
-export const TitleStyle = styled.div`   
-   width: 190px;
-   height: 200px;
-   overflow: hidden;
-   position: absolute;
-   left: 10px;
-   text-overflow: ellipsis;
+export const CardTitle = styled.h2`
+    z-index: 98;
+    position: absolute;
+    left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    pointer-events: none;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-overflow: clip;
+    ${StyledCard}:hover &{
+        opacity: 0;
+        transition-duration: .3s;
+        transition-delay: .09s;
+    }
+`;
+
+export const TitleContainer = styled.div`
+    bottom: 0;
+    position: absolute;
+    width: 180px;
+    height: 160px;
 `;
 
 export const StyledCard = styled.div`
@@ -42,7 +60,7 @@ export const StyledPic = styled.div<{backgroundUrl: string}>`
 `;
 
 export const StyledDescription = styled.div`
-      z-index: 99;
+      z-index: 106;
       position: absolute;
       top: 40px;
       left: 250px;
@@ -74,7 +92,7 @@ export const StyledButton = styled.button`
       cursor: pointer;
       outline: none;
       transition: all 0.3s ease;
-      
+      z-index: 105;
       ${StyledCard}:hover &{
             height: 495px;
             width: 435px;
@@ -84,7 +102,7 @@ export const StyledButton = styled.button`
       }
 `;
 export const StyledArrow = styled.div`
-      z-index: 100;
+      z-index: 106;
       position: absolute;
       right: 10px;
       bottom: 5px;
@@ -93,7 +111,6 @@ export const StyledArrow = styled.div`
       color: white;
       opacity: 0;
       transition-duration: .1s;
-      //transition-delay: 0;
   
       ${StyledCard}:hover &{
             opacity: 1;
