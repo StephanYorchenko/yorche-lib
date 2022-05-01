@@ -1,7 +1,7 @@
 import styled from "@emotion/styled/macro";
 import {ReactComponent as Arrow} from "./arrow.svg";
 
-export const LeftArrow = styled(Arrow)`
+export const LeftArrow = styled(Arrow)<{isVisible: boolean}>`
   position: absolute;
   height: 45px;
   width: 15px !important;
@@ -10,9 +10,17 @@ export const LeftArrow = styled(Arrow)`
   
   top: 50%;
   transform: translate(0, -50%);
+  transition: all ease .1s;
+  
+  visibility: ${props => props.isVisible ? "visible" : "hidden"};
+  
+  &:hover{
+    transform: translate(0, -50%) scale(1.5);
+    transition: all ease .1s;
+  }
 `;
 
-export const RightArrow = styled(Arrow)`
+export const RightArrow = styled(Arrow)<{isVisible: boolean}>`
   position: absolute;
   height: 45px;
   width: 15px !important;
@@ -22,6 +30,13 @@ export const RightArrow = styled(Arrow)`
   top: 50%;
   right: 0;
   transform: translate(0, -50%) rotate(180deg);
+  transition: all ease .1s;
+  
+  visibility: ${props => props.isVisible ? "visible" : "hidden"};
+
+  &:hover{
+    transform: translate(0, -50%) rotate(180deg) scale(1.5);
+  }
 `;
 
 export const CarouselWrapper = styled.div`

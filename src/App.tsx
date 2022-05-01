@@ -57,7 +57,7 @@ function App() {
             </div>
         </dd>
         <dt>Каруселька</dt>
-        <dd>
+        <dd>Сделаем во всю ширину</dd>
             <Carousel
                 carouselElements={[
                     <Card
@@ -107,7 +107,6 @@ function App() {
                     />
                 ]}
             />
-        </dd>
     </div>
   );
 }

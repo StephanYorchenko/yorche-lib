@@ -10,6 +10,11 @@ export const StyledCard = styled.div`
     position: relative;
     overflow: hidden;
     display: inline-block;
+
+    &:hover{
+      transform: scale(1.01);
+      transition: height ease .1s, width ease .1s;
+    }
 `;
 
 export const CardTitle = styled.h2`
