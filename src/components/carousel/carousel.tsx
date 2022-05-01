@@ -2,6 +2,7 @@ import {ICarouselProps} from "./interface";
 import {CarouselWrapper, LeftArrow, RightArrow, StyledCarousel} from "./carousel.style";
 import {useCallback, useEffect, useRef, useState} from "react";
 
+// Работает корректно только во всю ширину экрана
 export const Carousel = ({
     scrollStep=410,
     carouselElements=[]
