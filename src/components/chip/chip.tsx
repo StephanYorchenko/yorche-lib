@@ -2,7 +2,7 @@ import {IChipProps} from "./interface";
 import * as style from "./chip.style";
 import { cx } from 'emotion';
 import React, {SyntheticEvent, useCallback} from "react";
-import {Cross} from "../icon/cross";
+import {Cross} from "../icon";
 
 
 export const Chip = React.memo<IChipProps>(

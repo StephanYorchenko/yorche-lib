@@ -2,8 +2,10 @@ import React from 'react';
 import {Chip} from "./components/chip";
 import {Helmet} from "react-helmet";
 import {Card} from "./components/card"
-import {Cross} from "./components/icon/cross";
+import {Accept, CloseVote, Create, Cross, Edit, Reject, Save, Trash} from "./components/icon";
 import {Carousel} from "./components/carousel";
+import {Button} from "./components/button";
+import {ColorsEnum} from "./components/colors";
 
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
       </Helmet>
       <dt>Просто текст</dt>
       <dd>
-        <div>
+        <div style={{display: "flex", flexDirection: "row", gap: 5}}>
           <Chip text="Сптечик"/>
           <Chip text="Ярослав" variant="accept"/>
           <Chip text="Хлопин" variant="reject"/>
@@ -22,7 +24,7 @@ function App() {
       </dd>
       <dt>С onCLose</dt>
       <dd>
-        <div>
+        <div style={{display: "flex", flexDirection: "row", gap: 5}}>
           <Chip text="Екатеринбург Малышева 64" onClose={() => {alert('close')}}/>
           <Chip text="Ярослав" variant="accept" onClose={() => {alert('close')}}/>
           <Chip text="Хлопин" variant="reject" onClose={() => {alert('close')}}/>
@@ -37,6 +39,18 @@ function App() {
                 <Cross/>
             </>
           }/>
+        </div>
+      </dd>
+      <dt>Кнопка</dt>
+      <dd>
+        <div style={{display: "flex", flexDirection: "row", gap: 10, flexWrap: "wrap"}}>
+          <Button text="Сохранить" icon={<Save/>}/>
+          <Button text="Создать" icon={<Create/>}/>
+          <Button text="Редактировать" icon={<Edit/>}/>
+          <Button text="Отменить" icon={<Trash/>} color={ColorsEnum.Reject}/>
+          <Button text="Отказаться" icon={<Reject/>} color={ColorsEnum.Reject}/>
+          <Button text="Закрыть голосование" icon={<CloseVote/>} color={ColorsEnum.Accept}/>
+          <Button text="Принять приглашение" icon={<Accept/>} color={ColorsEnum.Accept}/>
         </div>
       </dd>
         <dt>Карточка</dt>
