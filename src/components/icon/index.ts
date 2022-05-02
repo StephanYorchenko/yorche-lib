@@ -15,3 +15,7 @@ export {ReactComponent as Reject}  from "./Reject.svg";
 export {ReactComponent as CloseVote} from "./CloseVote.svg";
 export {ReactComponent as Accept} from "./ParticipationAccept.svg";
 export {ReactComponent as Search} from "./Search.svg";
+export {ReactComponent as Org} from "./Org.svg";
+export {ReactComponent as Creator} from "./Creator.svg";
+export {ReactComponent as Archive} from "./Archive.svg";
+export {ReactComponent as Participating} from "./Participating.svg";

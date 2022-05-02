@@ -2,12 +2,31 @@ import React from 'react';
 import {Chip} from "./components/chip";
 import {Helmet} from "react-helmet";
 import {Card} from "./components/card"
-import {Accept, CloseVote, Create, Cross, Edit, Reject, Save, Trash} from "./components/icon";
+import {
+    Accept,
+    CloseVote,
+    Create,
+    Cross,
+    Edit,
+    Reject,
+    Save,
+    Trash,
+    Org,
+    Creator,
+    Archive,
+    Participating
+} from "./components/icon";
 import {Carousel} from "./components/carousel";
 import {Button} from "./components/button";
 import {ColorsEnum} from "./components/colors";
 import {SearchBar} from "./components/search-bar/search-bar";
-
+import {CircleCheckbox} from "./components/circle-checkbox"
+enum ExampleFields {
+    create="create",
+    org="org",
+    archive="archive",
+    participating="participating"
+}
 
 function App() {
   return (
@@ -58,6 +77,15 @@ function App() {
       <dd>
         <SearchBar placeholder="Поиск"/>
       </dd>
+        <dt>Круглые Чэкбоксы</dt>
+        <dd>
+            <CircleCheckbox<ExampleFields> options={[
+                {fieldName: ExampleFields.org, icon: <Org/>, color: ColorsEnum.Blue, text: "Организую"},
+                {fieldName: ExampleFields.participating, icon: <Participating/>, color: ColorsEnum.Orange, text: "Участвую"},
+                {fieldName: ExampleFields.create, icon: <Creator/>, color: ColorsEnum.GoogleDriveGreen, text: "Создаю"},
+                {fieldName: ExampleFields.archive, icon: <Archive/>, color: ColorsEnum.Archive, text: "Архив"},
+            ]}/>
+        </dd>
         <dt>Карточка</dt>
         <dd>
             <div>
@@ -75,6 +103,7 @@ function App() {
                 />
             </div>
         </dd>
+
         <dt>Каруселька</dt>
         <dd>Сделаем во всю ширину</dd>
             <Carousel

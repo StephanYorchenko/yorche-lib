@@ -13,4 +13,7 @@ export enum ColorsEnum {
   Accept = "#27AE60",
   Reject = "#EB5757",
   Blue = "#0088CC",
+  Orange = "#FF9900",
+  GoogleDriveGreen = "#4ED992",
+  Archive = "#6B6B6B"
 }
