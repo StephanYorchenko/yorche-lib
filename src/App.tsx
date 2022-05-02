@@ -99,32 +99,32 @@ function App() {
                     <Card
                         title="День рождения Сптпичика Ючррчченко"
                         description="День рождения Сптпичика Ючррчченко"
-                        backgroundImageUrl={"https://picsum.photos/id/1069/400/200"}
+                        backgroundImageUrl={"https://picsum.photos/id/848/400/200"}
                     />,
                     <Card
                         title="День рождения Сптпичика Ючррчченко"
                         description="День рождения Сптпичика Ючррчченко"
-                        backgroundImageUrl={"https://picsum.photos/id/1069/400/200"}
+                        backgroundImageUrl={"https://picsum.photos/id/580/400/200"}
                     />,
                     <Card
                         title="День рождения Сптпичика Ючррчченко"
                         description="День рождения Сптпичика Ючррчченко"
-                        backgroundImageUrl={"https://picsum.photos/id/1069/400/200"}
+                        backgroundImageUrl={"https://picsum.photos/id/412/400/200"}
                     />,
                     <Card
                         title="День рождения Сптпичика Ючррчченко"
                         description="День рождения Сптпичика Ючррчченко"
-                        backgroundImageUrl={"https://picsum.photos/id/1069/400/200"}
+                        backgroundImageUrl={"https://picsum.photos/id/671/400/200"}
                     />,
                     <Card
                         title="День рождения Сптпичика Ючррчченко"
                         description="День рождения Сптпичика Ючррчченко"
-                        backgroundImageUrl={"https://picsum.photos/id/1069/400/200"}
+                        backgroundImageUrl={"https://picsum.photos/id/864/400/200"}
                     />,
                     <Card
                         title="День рождения Сптпичика Ючррчченко"
                         description="День рождения Сптпичика Ючррчченко"
-                        backgroundImageUrl={"https://picsum.photos/id/1069/400/200"}
+                        backgroundImageUrl={"https://picsum.photos/id/123/400/200"}
                     />
                 ]}
             />

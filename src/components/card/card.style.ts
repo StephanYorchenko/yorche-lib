@@ -2,18 +2,27 @@ import styled from "@emotion/styled/macro";
 
 
 export const StyledCard = styled.div`
-    height: 200px !important;
-    width: 400px !important;
-    min-width: 400px !important;
+    height: 200px;
+    width: 400px;
+    min-width: 400px;
     border-radius: 10px;
     background-color: white;
     position: relative;
     overflow: hidden;
     display: inline-block;
-
+    transition: all 0.2s ease;
+    z-index: 0;
     &:hover{
-      transform: scale(1.01);
-      transition: height ease .1s, width ease .1s;
+      box-shadow: 0 15px 15px -10px gray;
+      z-index: 97;
+      transform: scale(1.15);
+      transition: all 0.2s ease;
+      transition-duration: .6s;
+      
+      //transition: all 0.3s ease;
+      //height: 300px;
+      //width: 450px;
+      //z-index: 1;
     }
 `;
 
@@ -49,7 +58,7 @@ export const StyledPic = styled.div<{backgroundUrl: string}>`
     background-image: url(${props => props.backgroundUrl});
     height: 200px;
     width: 400px;
-    filter: blur(2px) grayscale(0.3);
+    filter: blur(3px) grayscale(0.4);
     ${StyledCard}:hover &{
       filter: blur(0);
     }
