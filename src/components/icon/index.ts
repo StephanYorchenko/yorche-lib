@@ -14,3 +14,4 @@ export {ReactComponent as Trash} from "./Trash.svg";
 export {ReactComponent as Reject}  from "./Reject.svg";
 export {ReactComponent as CloseVote} from "./CloseVote.svg";
 export {ReactComponent as Accept} from "./ParticipationAccept.svg";
+export {ReactComponent as Search} from "./Search.svg";

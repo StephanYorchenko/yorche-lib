@@ -6,6 +6,7 @@ import {Accept, CloseVote, Create, Cross, Edit, Reject, Save, Trash} from "./com
 import {Carousel} from "./components/carousel";
 import {Button} from "./components/button";
 import {ColorsEnum} from "./components/colors";
+import {SearchBar} from "./components/search-bar/search-bar";
 
 
 function App() {
@@ -52,6 +53,12 @@ function App() {
           <Button text="Закрыть голосование" icon={<CloseVote/>} color={ColorsEnum.Accept}/>
           <Button text="Принять приглашение" icon={<Accept/>} color={ColorsEnum.Accept}/>
         </div>
+      </dd>
+      <dt>Строка поиска</dt>
+      <dd>
+        <SearchBar>
+          <input type="search"/>
+        </SearchBar>
       </dd>
         <dt>Карточка</dt>
         <dd>
