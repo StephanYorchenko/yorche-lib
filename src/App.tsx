@@ -50,15 +50,13 @@ function App() {
           <Button text="Редактировать" icon={<Edit/>}/>
           <Button text="Отменить" icon={<Trash/>} color={ColorsEnum.Reject}/>
           <Button text="Отказаться" icon={<Reject/>} color={ColorsEnum.Reject}/>
-          <Button text="Закрыть голосование" icon={<CloseVote/>} color={ColorsEnum.Accept}/>
+          <Button text="Закрыть опрос" icon={<CloseVote/>} color={ColorsEnum.Accept}/>
           <Button text="Принять приглашение" icon={<Accept/>} color={ColorsEnum.Accept}/>
         </div>
       </dd>
       <dt>Строка поиска</dt>
       <dd>
-        <SearchBar>
-          <input type="search"/>
-        </SearchBar>
+        <SearchBar placeholder="Поиск"/>
       </dd>
         <dt>Карточка</dt>
         <dd>
@@ -80,6 +78,7 @@ function App() {
         <dt>Каруселька</dt>
         <dd>Сделаем во всю ширину</dd>
             <Carousel
+                scrollStep={820}
                 carouselElements={[
                     <Card
                         title="День рождения Яслрсава Лвьва"

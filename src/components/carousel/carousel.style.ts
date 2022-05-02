@@ -4,7 +4,7 @@ import {ReactComponent as Arrow} from "./arrow.svg";
 export const LeftArrow = styled(Arrow)<{isVisible: boolean}>`
   position: absolute;
   height: 45px;
-  width: 15px !important;
+  width: 15px;
   
   z-index: 9999;
   
@@ -23,7 +23,7 @@ export const LeftArrow = styled(Arrow)<{isVisible: boolean}>`
 export const RightArrow = styled(Arrow)<{isVisible: boolean}>`
   position: absolute;
   height: 45px;
-  width: 15px !important;
+  width: 15px;
   
   z-index: 9999;
   
@@ -45,8 +45,7 @@ export const CarouselWrapper = styled.div`
   position: relative;
 `;
 
-export const StyledCarousel = styled.div`
-    top: 0;
+export const StyledCarousel = styled.div<{height: string}>`
     border-color: #000;
     border-width: 10px;
     
@@ -57,7 +56,7 @@ export const StyledCarousel = styled.div`
     align-content: flex-start;
     gap: 10px;
   
-    overflow-y: hidden;
+    overflow-y: visible;
     overflow-x: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */ 
@@ -66,7 +65,9 @@ export const StyledCarousel = styled.div`
     }
 
     width: 100%;
-    height: max-content;
+    height: ${props => props.height};
+    padding-bottom: 0;
+    padding-top: 40px;
     scroll-behavior: smooth;
 `;
 

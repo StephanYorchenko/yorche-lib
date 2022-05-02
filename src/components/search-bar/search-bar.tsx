@@ -2,11 +2,11 @@ import {Search} from "../icon";
 import React from "react";
 import {StyledSearchBar} from "./search-bar.style"
 
-export const SearchBar = ({children}: React.PropsWithChildren<{}>) => {
+export const SearchBar = (props: React.InputHTMLAttributes<HTMLInputElement>) => {
   return (
-    <>
-      <Search/>
-      {children}
-    </>
+    <StyledSearchBar>
+        <Search/>
+      <input className="form__field" {...props}/>
+    </StyledSearchBar>
   )
 }

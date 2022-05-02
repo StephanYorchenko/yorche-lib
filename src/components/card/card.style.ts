@@ -24,6 +24,9 @@ export const StyledCard = styled.div`
       //width: 450px;
       //z-index: 1;
     }
+    &:first-child{
+      margin-left: 30px;
+    }
 `;
 
 export const CardTitle = styled.h2`

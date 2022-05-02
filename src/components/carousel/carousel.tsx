@@ -39,7 +39,7 @@ export const Carousel = ({
     return (
         <CarouselWrapper>
           <LeftArrow onClick={scrollRight} isVisible={visibleLeftArrow}/>
-          <StyledCarousel ref={carouselRef}>
+          <StyledCarousel ref={carouselRef} height="240px">
             {
               carouselElements.map(el => el)
             }
